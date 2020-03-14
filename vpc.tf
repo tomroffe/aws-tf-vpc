@@ -43,7 +43,6 @@ module "vpc" {
   tags = {
     Organization                                  = title(var.organization)
     Environment                                   = title(var.environment)
-    "kubernetes.io/cluster/${local.cluster_name}" = "shared"
   }
 
   public_subnet_tags = {
